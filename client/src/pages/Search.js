@@ -24,7 +24,7 @@ const Search = (props) => {
 
   const onSaveBook = (id) => {
     console.log("TARGET BOOK ID: ", id);
-    const targetBook = book.find((book) => book.id === id);
+    const targetBook = searchBooks.find((book) => book.id === id);
     const bookId = targetBook.id;
     console.log("TARGET BOOK: ", targetBook);
     const title = targetBook.volumeInfo.title;
