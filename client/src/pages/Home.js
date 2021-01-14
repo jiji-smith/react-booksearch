@@ -4,9 +4,11 @@ import Jumbotron from "../components/Jumbotron";
 import { Card, Button, Container, Row, Col } from "react-bootstrap";
 
 const Home = (props) => {
+  console.log(props);
     return (
       <div>
-        <Jumbotron title={props.title} />
+        <Jumbotron />
+
         <Container className="mt-4">
           <Row>
             <Col>
@@ -17,7 +19,7 @@ const Home = (props) => {
                 <Card.Body>
                   <div className="text-center">
                     <Link to="/search">
-                      <Button variant="success">SEARCH</Button>
+                      <Button variant="success">SEARCH BOOKS</Button>
                     </Link>
                   </div>
                 </Card.Body>
@@ -32,7 +34,7 @@ const Home = (props) => {
                 <Card.Body>
                   <div className="text-center">
                     <Link to="/saved">
-                      <Button variant="warning">SAVED </Button>
+                      <Button variant="warning">SAVED BOOKS </Button>
                     </Link>
                   </div>
                 </Card.Body>
