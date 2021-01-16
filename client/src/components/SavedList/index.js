@@ -14,7 +14,7 @@ console.log(props)
             </div>
             <div className="card-stacked">
                 <div className="card-content">
-                <span className="card-title">{props.title} by {props.authors}</span>
+                <h3 className="card-title">{props.title} by {props.authors}</h3>
                 <p>{props.description}</p>
                 </div>
                 <div className="card-action">
